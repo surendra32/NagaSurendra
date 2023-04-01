@@ -1,0 +1,361 @@
+/* Nav bar */
+.bg-color {
+  background-color: red !important;
+}
+.name-span {
+  color: white;
+  font-size: 32px;
+  margin-left: 10%;
+  font-weight: bolder;
+}
+.nav-li {
+  font-size: 20px;
+  font-weight: bolder;
+}
+.nav-ul {
+  margin-right: 10%;
+}
+
+/* Home page */
+.home {
+  background: url(./Images/laptopwallpeper.jpg) no-repeat;
+  height: 100vh;
+}
+.content {
+  position: absolute;
+  top: 45vh;
+  left: 10%;
+}
+.content > p,
+.content > h3 {
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+.content > p {
+  font-size:16px;
+}
+.content h3 {
+  font-size: 32px;
+}
+.home-span{
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+}
+/* About */
+.row-about {
+  width: 100%;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.typewrite{
+  color: red;
+}
+.about {
+  min-height: 100vh;
+  width: 100%;
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.col-about-img {
+  display: flex;
+  justify-content: center;
+}
+.img-container {
+  width: 70%;
+  height: 80%;
+  overflow: hidden;
+  padding: 0px;
+  border-radius: 20px;
+}
+.btn-width{
+  width: 70px;
+}
+.icon-1{
+  transform: scale(1.3);
+}
+a{
+  text-decoration: none;
+}
+.list-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  max-height: 290px;
+}
+.tabs {
+  display: none;
+}
+.tabs.active-tab {
+  display: block;
+}
+.list {
+  list-style: none;
+}
+.skill-list {
+  min-height: 290px;
+}
+.link {
+  position: relative;
+  bottom: 10px;
+}
+.links {
+  display: inline;
+  position: absolute;
+  cursor: pointer;
+}
+.links::after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  background-color: red;
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  transition: 0.5s;
+}
+.links.active-link::after {
+  width: 50%;
+}
+.heading-content {
+  color: red;
+  font-weight: 600;
+  display: inline;
+  position: relative;
+  top: 2vh;
+}
+.heading-content:after,
+.heading-content::before {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  display: inline-block;
+  position: relative;
+  bottom: 3px;
+}
+h1 {
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  top: 1vh;
+}
+
+.about-h3 {
+  font-weight: bold;
+}
+.about-para {
+  margin: 0px;
+  padding: 0px;
+  font-weight: 500;
+}
+.links {
+  font-weight: 500;
+}
+.ed-li {
+  font-weight: 500;
+  padding: 0px;
+  margin: 0px;
+  list-style: disc;
+  margin-top: 20px;
+}
+.skill-li {
+  font-weight: 500;
+  padding: 0px;
+  margin: 0px;
+  list-style: disc;
+  margin-top: 20px;
+}
+/* project */
+.project {
+  min-height: 100vh;
+  background-color: black;
+}
+.pro-img{
+  width: 80%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+}
+.pro-details{
+  height: 400px
+}
+.project-img {
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+.project-img:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 2px 5px rgba(255, 0, 0, 0.7),
+    2px 2px 5px rgba(255, 0, 0, 0.65), 2px 2px 5px rgba(255, 0, 0, 0.6);
+}
+.pro-h1 {
+  color: white;
+  margin-bottom: 8px;
+}
+.pro-heading-content {
+  color: red;
+  font-weight: 500;
+  position: relative;
+  top: 1vh;
+}
+.pro-heading-content::after,
+.pro-heading-content::before {
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  position: relative;
+  bottom: 2px;
+}
+.pro-h2 {
+  color: white;
+  font-size: 25px;
+}
+.pro-para {
+  color: white;
+}
+.pro-span {
+  color: red;
+  font-weight: 600;
+}
+.pro-li {
+  color: white;
+}
+.pro-span-tech {
+  color: white;
+  font-weight: 600;
+}
+
+/* skills */
+.skills-content {
+  min-height: 100vh;
+}
+.skill-row {
+  margin: 0px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skill-container {
+  width: 70%;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skill-img {
+  width: 100%;
+  max-height: 250px;
+}
+.column {
+  max-width: 250px;
+  max-height: 250px;
+}
+.column-1, .column-2, .column-3,.column-4,.column-5,.column-6{
+  transition: all .8s;
+  cursor: pointer;
+}
+.column-1:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px rgba(210, 93, 93, 0.7),
+    2px 2px 5px rgba(210, 93, 93, 0.65), 2px 2px 5px rgba(210, 93, 93, 0.6);
+}
+.column-2:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px rgba(37, 120, 188, 0.7),
+    2px 2px 5px rgba(37, 120, 188, 0.65), 2px 2px 5px rgba(37, 120, 188, 0.6);
+}
+.column-3:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px rgba(220, 191, 47, 0.7),
+    2px 2px 5px rgba(3220, 191, 47, 0.6), 2px 2px 5px rgba(220, 191, 47, 0.65);
+}
+.column-4:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px rgba(47, 203, 220, 0.7),
+    2px 2px 5px rgba(47, 203, 220, 0.65), 2px 2px 5px rgba(47, 203, 220, 0.6);
+}
+.column-5:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7), 2px 2px 5px rgba(4, 4, 4, 0.65),
+    2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+.column-6:hover {
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px rgba(80, 34, 231, 0.772),
+    2px 2px 5px rgba(80, 34, 231, 0.65), 2px 2px 5px rgba(80, 34, 231, 0.6);
+}
+/* contact */
+.contact {
+  width: 100%;
+}
+.contact-main {
+  position: relative;
+  top: 5vh;
+}
+.icon {
+  transform: scale(1.4);
+  color: red;
+  position: relative;
+  top: 5px;
+}
+.contact-column {
+  position: relative;
+  top: -45px;
+}
+.con-h5 {
+  font-weight: 650;
+}
+.con-para-main {
+  font-weight: 500;
+}
+.con-para-head {
+  padding: 0px;
+  margin-top: 0px;
+  position: relative;
+  top: 10px;
+  font-weight: 500;
+}
+.con-para-sub {
+  position: relative;
+  top: -10px;
+  color: grey;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+/* footer */
+.footer {
+  background-color: black;
+  color: white;
+  height: 7vh;
+}
+.footer > p {
+  position: relative;
+  top: 1.5vh;
+  font-weight: 500;
+}
+.footer-span {
+  color: red;
+}
+#goup {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: none;
+}
+#goup > a {
+  color: rgb(255, 255, 255);
+}
+#goup i {
+  transform: scale(2.5);
+  background-color: red;
+  border-radius: 2px;
+}
+.container {
+  position: relative;
+  top: 5vh;
+}

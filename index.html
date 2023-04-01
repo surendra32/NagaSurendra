@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/6035f9f047.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body onscroll="gotoup()">
+    <nav
+      class="navbar bg-dark navbar-expand-lg bg-body-tertiary fixed-top bg-color"
+      data-bs-theme="dark"
+      id="navbar-example2"
+    >
+      <div class="container-fluid">
+        <span class="name-span">Surendra</span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          id="nav-button"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav nav-ul">
+            <li class="nav-item nav-li">
+              <a
+                class="nav-link active"
+                onclick="openpage()"
+                aria-current="page"
+                href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item nav-li">
+              <a class="nav-link" onclick="openpage()" href="#about">About</a>
+            </li>
+            <li class="nav-item nav-li">
+              <a class="nav-link" onclick="openpage()" href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item nav-li">
+              <a class="nav-link" onclick="openpage()" href="#skills-list"
+                >Skills</a
+              >
+            </li>
+            <li class="nav-item nav-li">
+              <a class="nav-link" onclick="openpage()" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar-example2"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+      class="scrollspy-example bg-body-tertiary rounded-2"
+      tabindex="0"
+    >
+      <div class="container-fluid home" id="home">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 gx-0">
+            <div class="content">
+              <p class="home-para">Hello,This is</p>
+              <span class="home-span">I am surendra</span>
+              <h3 class="home-h3">
+                <a
+                  href=""
+                  class="typewrite"
+                  data-period="2000"
+                  data-type='["I am Front end developer.", "I Love Design.", "I Love to Develop." ]'
+                >
+                  <span class="wrap"></span>
+                </a>
+              </h3>
+              <a
+                href="https://drive.google.com/file/d/1jD6zsCITo90-380HoY25nMvXKBQJjYqG/view?usp=share_link"
+                target="_blank"
+                ><button class="btn btn-danger">Resume</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- about -->
+
+      <div class="container-fluid about" id="about">
+        <div class="container text-center py-5">
+          <h1>About Me</h1>
+          <span class="heading-content">who i am</span>
+        </div>
+        <div class="row gy-5 py-lg-5 py-sm-1 row-about">
+          <!-- picture column -->
+          <div class="col-lg-4 col-sm-6 col-about-img">
+            <div class="container-fluid img-container">
+              <img src="./Images/mypic1.JPG" class="img-fluid" alt="" />
+            </div>
+          </div>
+          <!-- About column -->
+          <div class="col-lg-4 col-sm-6">
+            <h3 class="about-h3">I'm Surendra</h3>
+            <h3 class="about-h3"> <a
+              href=""
+              class="typewrite"
+              data-period="2000"
+              data-type='["I am Front end developer."]'
+            >
+              <span class="wrap"></span>
+            </a></h3>
+            <p class="about-para">
+              To be a successful professional in a globally respected company
+              and to achieve the objectives of the company with honesty and
+              fairness and to continuously upgrade my knowledge and skills
+            </p>
+            <a
+              href="https://www.linkedin.com/in/surendra-madhu-3208bb26a/"
+              target="_blank"
+            >
+              <button class="btn btn-danger btn-width">
+                <i class="fa-brands fa-linkedin icon-1"></i>
+              </button>
+            </a>
+            <a href="https://github.com/surendra32" target="_blank">
+              <button class="btn btn-danger btn-width">
+                <i class="fa-brands fa-github"></i>
+              </button>
+            </a>
+          </div>
+          <!-- Education content -->
+          <div class="col-lg-4 col-sm-12">
+            <div class="container-fluid">
+              <!-- Education and skills col -->
+              <div class="row">
+                <div class="col text-center">
+                  <ul class="link ed-ul">
+                    <li
+                      class="links active-link"
+                      onclick="opentab('education')"
+                    >
+                      Education
+                    </li>
+                  </ul>
+                </div>
+                <div class="col text-start">
+                  <ul class="link">
+                    <li class="links" onclick="opentab('skills')">Skills</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="row tabs active-tab" id="education">
+                <div class="container-fluid list-tabs">
+                  <div class="col skill-list">
+                    <ul class="list">
+                      <li class="ed-li">
+                        <header class="ed-header">B-tech</header>
+                        <span class="ed-span"
+                          >RAMA CHANDRA COLLEGE OF ENGINEERING</span
+                        >
+                        <span class="ed-span">Mechanical Engineer</span>
+                      </li>
+                      <li class="ed-li">
+                        <header class="ed-header">Diploma</header>
+                        <span class="ed-span"
+                          >AANM & VVRSR POLLYTECHNIC COLLEGE</span
+                        >
+                        <span class="ed-span">Mechanical Engineer</span>
+                      </li>
+                      <li class="ed-li">
+                        <header class="ed-header">10<sup>th</sup></header>
+                        <span class="ed-span"
+                          >VISWAKAVI EM HIGH SCHOOL</span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row tabs" id="skills">
+                <div class="container-fluid list-tabs">
+                  <div class="col skill-list">
+                    <ul class="list">
+                      <li class="skill-li">Html</li>
+                      <li class="skill-li">CSS</li>
+                      <li class="skill-li">Java Script</li>
+                      <li class="skill-li">React js</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Projects -->
+      <div class="container-fluid project" id="projects">
+        <div class="container text-center py-5">
+          <h1 class="pro-h1">My Projects</h1>
+          <span class="pro-heading-content">Projects name</span>
+        </div>
+        <div class="row align-items-center gy-2 py-5">
+          <div class="col-lg-6 col-sm-12">
+            <div class="container-fluid pro-img">
+              <img
+                src="./Images/image1.jpg"
+                alt="project"
+                class="img-fluid project-img"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div class="container-fluid pro-details">
+              <h2 class="pro-h2">ADMIN DASHBOARD</h2>
+              <p class="pro-para">
+                The dashboard is the front page of the administration UI It
+                provides convenient shortcuts for everyday management tasks,
+                some server information, and Review Board project news updates.
+              </p>
+              <p><span class="pro-span">Features:</span></p>
+              <ul>
+                <li class="pro-li">Manage Team/Contact Info</li>
+                <li class="pro-li">Invoices Balance</li>
+                <li class="pro-li">Profil Form / Calendar</li>
+                <li class="pro-li">FAQ Page</li>
+                <li class="pro-li">Bar Chart / Pie Chart / Line Chart</li>
+              </ul>
+              <p>
+                <span class="pro-span-tech"
+                  >Tech Stack: React.js | HTML | CSS | Javascript | Material
+                  UI(MUI)</span
+                >
+              </p>
+              <button class="btn btn-primary btn-font">Code</button>
+              <button class="btn btn-secondary btn-font">Live</button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div class="container-fluid pro-img">
+              <img
+                src="./Images/image1.jpg"
+                alt="project"
+                class="img-fluid project-img"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <h2 class="pro-h2">ADMIN DASHBOARD</h2>
+            <p class="pro-para">
+              The dashboard is the front page of the administration UI It
+              provides convenient shortcuts for everyday management tasks, some
+              server information, and Review Board project news updates.
+            </p>
+            <p><span class="pro-span">Features:</span></p>
+            <ul>
+              <li class="pro-li">Manage Team/Contact Info</li>
+              <li class="pro-li">Invoices Balance</li>
+              <li class="pro-li">Profil Form / Calendar</li>
+              <li class="pro-li">FAQ Page</li>
+              <li class="pro-li">Bar Chart / Pie Chart / Line Chart</li>
+            </ul>
+            <p>
+              <span class="pro-span-tech"
+                >Tech Stack: React.js | HTML | CSS | Javascript | Material
+                UI(MUI)</span
+              >
+            </p>
+            <button class="btn btn-primary btn-font">Code</button>
+            <button class="btn btn-secondary btn-font">Live</button>
+          </div>
+        </div>
+      </div>
+      <!-- skills -->
+      <div class="container-fluid skills-content" id="skills-list">
+        <div class="container text-center py-5">
+          <h1 class="main-h1">Skills</h1>
+          <span class="heading-content">What i know</span>
+        </div>
+        <div class="container-fluid skill-container">
+          <div class="row skill-row">
+            <div class="col-lg-4 col-sm-6 col-6 col-md-4 my-5 column column-1">
+              <a href="https://html.com/" target="_blank"
+                ><img
+                  src="./Images/html1.png"
+                  class="img-fluid skill-img"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-6 col-md-4 my-5 column column-2">
+              <a href="https://www.free-css.com/" target="_blank"
+                ><img
+                  src="./Images/css2.png"
+                  class="img-fluid skill-img"
+                  id="jspic"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-6 col-md-4 my-5 column column-3">
+              <a
+                href="https://www.geeksforgeeks.org/javascript/"
+                target="_blank"
+                ><img src="./Images/js1.png" class="img-fluid skill-img" alt=""
+              /></a>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-6 col-md-4 my-5 column column-4">
+              <a href="https://react.dev/" target="_blank"
+                ><img
+                  src="./Images/react1.png"
+                  class="img-fluid skill-img"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-6 col-md-4 my-5 column column-5">
+              <a href="https://babeljs.io/" target="_blank"
+                ><img
+                  src="./Images/babeljs-icon.svg"
+                  class="img-fluid skill-img"
+                  alt=""
+              /></a>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-6 col-md-4 my-5 column column-6">
+              <a href="https://getbootstrap.com/" target="_blank"
+                ><img
+                  src="./Images/bootstrap.png"
+                  class="img-fluid skill-img"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- contact -->
+      <div class="container-fluid contact" id="contact">
+        <div class="container text-center py-5 contact-main">
+          <h1 class="main-h1">Contact me</h1>
+          <span class="heading-content">get in touch</span>
+        </div>
+        <div class="row contact-row p-5 m-lg-5">
+          <div class="col-lg-6 col-sm-12">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                  <h5 class="con-h5">Get in touch</h5>
+                  <p class="con-para-main">
+                    I'm looking keenly to work as full-stack web developer.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="container-fluid d-flex">
+                    <div class="my-3">
+                      <i class="fa-solid fa-user icon"></i>
+                    </div>
+                    <div class="px-4">
+                      <p class="con-para-head">Name</p>
+                      <p class="con-para-sub">Naga surendra baba</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="container-fluid d-flex">
+                    <div class="my-3">
+                      <i class="fa-solid fa-location-dot icon"></i>
+                    </div>
+                    <div class="px-4">
+                      <p class="con-para-head">Adress</p>
+                      <p class="con-para-sub">
+                        Hanuman junction, Andhra Pradesh
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="container-fluid d-flex">
+                    <div class="my-3">
+                      <i class="fa-solid fa-envelope icon"></i>
+                    </div>
+                    <div class="px-4">
+                      <p class="con-para-head">Email</p>
+                      <p class="con-para-sub">nagasurendra.madhu@gmail.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="container-fluid d-flex">
+                    <div class="my-3">
+                      <i class="fa-solid fa-phone icon"></i>
+                    </div>
+                    <div class="px-4">
+                      <p class="con-para-main">Phone</p>
+                      <p class="con-para-sub">7730842880</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 gy-5 col-sm-12">
+            <div class="container-fluid contact-column">
+              <div class="container-fluid">
+                <h5 class="con-h5">Contact now</h5>
+              </div>
+              <div class="row mb-3 my-4">
+                <div class="col-6">
+                  <input
+                    type="text"
+                    class="form-control col-lg-6"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="col-6">
+                  <input
+                    type="email"
+                    class="form-control col-lg-6"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+              <div class="mb-3 col-12">
+                <input
+                  type="text"
+                  class="form-control col-lg-6"
+                  placeholder="Subject"
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  rows="3"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="mb-3 col-12">
+                <button class="btn btn-danger btn-font">Send Email</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="container-fluid text-center footer">
+        <p>
+          Created By <span class="footer-span">Surendra</span> | &#169; 2022 All
+          rights reserved.
+        </p>
+      </div>
+    </div>
+    <span id="goup"
+      ><a href="#home"><i class="fa-solid fa-angle-up goup"></i></a
+    ></span>
+    <script>
+      var skills = document.getElementsByClassName("links");
+      var tabs = document.getElementsByClassName("tabs");
+
+      function opentab(tabname) {
+        for (tab of tabs) {
+          tab.classList.remove("active-tab");
+        }
+        for (skill of skills) {
+          skill.classList.remove("active-link");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+      function gotoup() {
+        const upspan = document.getElementById("goup");
+
+        if (window.scrollY < 450) {
+          upspan.setAttribute("style", "display:none");
+        } else {
+          upspan.setAttribute("style", "display:block");
+        }
+      }
+      var nav_link = document.getElementsByClassName("nav-link");
+      function openpage() {
+        for (li of nav_link) {
+          li.classList.remove("active");
+        }
+        event.currentTarget.classList.add("active");
+        document.getElementById("navbarSupportedContent").style.display =
+          "none";
+      }
+
+      var btn = document.getElementById("nav-button");
+      btn.addEventListener("click", () => {
+        document.getElementById("navbarSupportedContent").style.display =
+          "block";
+      });
+
+
+      // typing text
+      var TxtType = function(el, data, time) {
+        this.data = data;
+        this.el = el;
+        this.loopNum = 0;
+        this.time = parseInt(time, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.data.length;
+        var fullTxt = this.data[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.time;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var data = elements[i].getAttribute('data-type');
+            var time = elements[i].getAttribute('data-period');
+            if (data) {
+              new TxtType(elements[i], JSON.parse(data), time);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+    </script>
+  </body>
+</html>
