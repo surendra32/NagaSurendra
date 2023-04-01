@@ -518,11 +518,18 @@
         document.getElementById("navbarSupportedContent").style.display =
           "none";
       }
-
+      var count = 1;
       var btn = document.getElementById("nav-button");
       btn.addEventListener("click", () => {
+         count++;
+        if(count%2 === 0){
         document.getElementById("navbarSupportedContent").style.display =
           "block";
+        }
+        if(count%2===1){
+          document.getElementById("navbarSupportedContent").style.display =
+          "none";
+        }
       });
 
       // typing text
